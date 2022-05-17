@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Webapplication</display-name>
+  <welcome-file-list>
+    <welcome-file>Links.html</welcome-file>
+  </welcome-file-list>
+   <servlet>
+ <servlet-name>Webapp</servlet-name>
+  <servlet-class>ai.jobiak.webapp.Webapp</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Webapp</servlet-name>
+    <url-pattern>/start</url-pattern>
+  </servlet-mapping>
+   <servlet>
+ <servlet-name>SignupFormServlet</servlet-name>
+  <servlet-class>ai.jobiak.webapp.SignupFormServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SignupFormServlet</servlet-name>
+    <url-pattern>/end</url-pattern>
+  </servlet-mapping>
+   <servlet>
+ <servlet-name>CalcutatorServlet</servlet-name>
+  <servlet-class>ai.jobiak.webapp.CalculatorServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>CalculatorServlet</servlet-name>
+    <url-pattern>/end</url-pattern>
+  </servlet-mapping>
+  <servlet>
+ <servlet-name>FactorialServlet</servlet-name>
+  <servlet-class>ai.jobiak.webapp.FactorialServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>FactorialServlet</servlet-name>
+    <url-pattern>/end</url-pattern>
+  </servlet-mapping>
+  <servlet>
+ <servlet-name>CookieCounterServlet</servlet-name>
+  <servlet-class>ai.jobiak.state.CookieCounterServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>CookieCounterServlet</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>AddServlet</servlet-name>
+  <servlet-class>Demoapp.AddServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>AddServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>
